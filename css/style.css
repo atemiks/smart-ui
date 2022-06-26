@@ -28,11 +28,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 68px;
     height: 48px;
+    padding: 0;
     border: none;
     border-radius: 20% 20%;
     background: rgba(0, 0, 0, .8);
@@ -40,9 +38,10 @@
 }
 
 .video-block .video-play::after {
-    position: relative;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-75%);
+    transform: translate(-25%, -50%);
     border: 10px solid transparent; 
     border-left: 18px solid #fff;
     content: '';
